@@ -53,6 +53,7 @@
 		D81411A72413718000372717 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8AE4A232413950B00436ADC /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		D8AE4A252413965C00436ADC /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		D8AE4A2724139A7D00436ADC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +84,7 @@
 		D81411772413717E00372717 = {
 			isa = PBXGroup;
 			children = (
+				D8AE4A2724139A7D00436ADC /* README.md */,
 				D81411822413717E00372717 /* Landmarks */,
 				D81411992413718000372717 /* LandmarksTests */,
 				D81411A42413718000372717 /* LandmarksUITests */,
