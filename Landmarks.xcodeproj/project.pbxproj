@@ -17,6 +17,7 @@
 		D81411A62413718000372717 /* LandmarksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81411A52413718000372717 /* LandmarksUITests.swift */; };
 		D8AE4A242413950B00436ADC /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE4A232413950B00436ADC /* CircleImage.swift */; };
 		D8AE4A262413965C00436ADC /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE4A252413965C00436ADC /* MapView.swift */; };
+		D8AE4A292415739400436ADC /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = D8AE4A282415739400436ADC /* LICENSE.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		D8AE4A232413950B00436ADC /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		D8AE4A252413965C00436ADC /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		D8AE4A2724139A7D00436ADC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D8AE4A282415739400436ADC /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				D8AE4A2724139A7D00436ADC /* README.md */,
+				D8AE4A282415739400436ADC /* LICENSE.txt */,
 				D81411822413717E00372717 /* Landmarks */,
 				D81411992413718000372717 /* LandmarksTests */,
 				D81411A42413718000372717 /* LandmarksUITests */,
@@ -248,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8AE4A292415739400436ADC /* LICENSE.txt in Resources */,
 				D81411902413718000372717 /* LaunchScreen.storyboard in Resources */,
 				D814118D2413718000372717 /* Preview Assets.xcassets in Resources */,
 				D814118A2413718000372717 /* Assets.xcassets in Resources */,
