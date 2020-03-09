@@ -51,6 +51,7 @@ final class ImageStore {
         else {
                 fatalError("Couldn't load image \(name).jpg from main bundle.")
         }
+        print(Bundle.main.url(forResource: name, withExtension: "jpg"))
         return image
     }
     func _guaranteeImage(name: String) -> _ImageDictionary.Index {
