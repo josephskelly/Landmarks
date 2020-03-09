@@ -30,13 +30,11 @@ struct Landmark: Hashable, Codable {
         case rivers = "Rivers"
     }
 }
-//TODO: Fix bug: "extension must not contain stored properties
-//extension Landmark {
-//    var image: Image {
-//        TODO: Add ImageStore class
-//        ImageStore.shared.image(name: imageName)
-//    }
-//}
+extension Landmark {
+    var image: Image {
+        ImageStore.shared.image(name: imageName)
+    }
+}
 
 struct Coordinates: Hashable, Codable {
     var latitude: Double
