@@ -148,11 +148,11 @@
 				D81411832413717E00372717 /* AppDelegate.swift */,
 				D81411852413717E00372717 /* SceneDelegate.swift */,
 				D81411872413717E00372717 /* LandmarkDetail.swift */,
+				D89B95BD2417552100BEBAAF /* LandmarkList.swift */,
 				D81411892413718000372717 /* Assets.xcassets */,
 				D814118E2413718000372717 /* LaunchScreen.storyboard */,
 				D81411912413718000372717 /* Info.plist */,
 				D814118B2413718000372717 /* Preview Content */,
-				D89B95BD2417552100BEBAAF /* LandmarkList.swift */,
 			);
 			path = Landmarks;
 			sourceTree = "<group>";
