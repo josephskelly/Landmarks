@@ -142,15 +142,15 @@
 		D81411822413717E00372717 /* Landmarks */ = {
 			isa = PBXGroup;
 			children = (
-				D89B95BF24176AAF00BEBAAF /* Scenes */,
-				D8AE4A30241575C700436ADC /* Models */,
-				D89B95BC2417526800BEBAAF /* Supporting Views */,
-				D8AE4A3524160A4F00436ADC /* Resources */,
 				D81411832413717E00372717 /* AppDelegate.swift */,
 				D81411852413717E00372717 /* SceneDelegate.swift */,
 				D81411892413718000372717 /* Assets.xcassets */,
 				D814118E2413718000372717 /* LaunchScreen.storyboard */,
 				D81411912413718000372717 /* Info.plist */,
+				D8AE4A30241575C700436ADC /* Models */,
+				D8AE4A3524160A4F00436ADC /* Resources */,
+				D89B95BF24176AAF00BEBAAF /* Scenes */,
+				D89B95BC2417526800BEBAAF /* Supporting Views */,
 				D814118B2413718000372717 /* Preview Content */,
 			);
 			path = Landmarks;

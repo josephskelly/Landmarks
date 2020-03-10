@@ -24,6 +24,12 @@ struct LandmarkList: View {
 
 struct LandmarkList_Previews: PreviewProvider {
     static var previews: some View {
-        LandmarkList()
+        ForEach(["iPhone XR", "iPad mini 4"], id: \.self) { deviceName in
+            LandmarkList()
+                .previewDevice(PreviewDevice(rawValue: deviceName))
+                .previewDisplayName(deviceName)
+                .environment(\.colorScheme, .dark)
+            //TODO: figure out why the ipad preview dont work with this list (or ipad simulator 🤔)
+        }
     }
 }
