@@ -27,6 +27,7 @@
 		D89B95B92416D6ED00BEBAAF /* hiddenlake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D89B95AD2416D6ED00BEBAAF /* hiddenlake.jpg */; };
 		D89B95BA2416D6ED00BEBAAF /* turtlerock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D89B95AE2416D6ED00BEBAAF /* turtlerock.jpg */; };
 		D89B95BB2416D6ED00BEBAAF /* twinlake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D89B95AF2416D6ED00BEBAAF /* twinlake.jpg */; };
+		D89B95BE2417552100BEBAAF /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89B95BD2417552100BEBAAF /* LandmarkList.swift */; };
 		D8AE4A242413950B00436ADC /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE4A232413950B00436ADC /* CircleImage.swift */; };
 		D8AE4A262413965C00436ADC /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE4A252413965C00436ADC /* MapView.swift */; };
 		D8AE4A292415739400436ADC /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = D8AE4A282415739400436ADC /* LICENSE.txt */; };
@@ -80,6 +81,7 @@
 		D89B95AD2416D6ED00BEBAAF /* hiddenlake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hiddenlake.jpg; sourceTree = "<group>"; };
 		D89B95AE2416D6ED00BEBAAF /* turtlerock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = turtlerock.jpg; sourceTree = "<group>"; };
 		D89B95AF2416D6ED00BEBAAF /* twinlake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = twinlake.jpg; sourceTree = "<group>"; };
+		D89B95BD2417552100BEBAAF /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 		D8AE4A232413950B00436ADC /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		D8AE4A252413965C00436ADC /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		D8AE4A2724139A7D00436ADC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				D814118E2413718000372717 /* LaunchScreen.storyboard */,
 				D81411912413718000372717 /* Info.plist */,
 				D814118B2413718000372717 /* Preview Content */,
+				D89B95BD2417552100BEBAAF /* LandmarkList.swift */,
 			);
 			path = Landmarks;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				D81411842413717E00372717 /* AppDelegate.swift in Sources */,
 				D8AE4A242413950B00436ADC /* CircleImage.swift in Sources */,
 				D8AE4A262413965C00436ADC /* MapView.swift in Sources */,
+				D89B95BE2417552100BEBAAF /* LandmarkList.swift in Sources */,
 				D81411862413717E00372717 /* SceneDelegate.swift in Sources */,
 				D81411882413717E00372717 /* LandmarkDetail.swift in Sources */,
 				D8AE4A392416D45D00436ADC /* LandmarkRow.swift in Sources */,
