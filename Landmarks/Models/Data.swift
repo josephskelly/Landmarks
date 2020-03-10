@@ -30,6 +30,7 @@ func load<T: Decodable>(_ filename: String) -> T {
     } catch {
         fatalError("Couldn't parse \(filename) from \(T.self):\n\(error)")
     }
+    
 }
 final class ImageStore {
     typealias _ImageDictionary = [String: CGImage]
@@ -51,7 +52,6 @@ final class ImageStore {
         else {
                 fatalError("Couldn't load image \(name).jpg from main bundle.")
         }
-        print(Bundle.main.url(forResource: name, withExtension: "jpg"))
         return image
     }
     func _guaranteeImage(name: String) -> _ImageDictionary.Index {
