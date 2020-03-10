@@ -13,10 +13,10 @@ struct LandmarkDetail: View {
     
     var body: some View {
         VStack {
-            MapView()
+            MapView(coordinate: landmark.locationCoordinate)
                 .frame(height: 300)
                 .edgesIgnoringSafeArea(.top)
-            CircleImage()
+            CircleImage(image: landmark.image)
                 .offset(y: -150)
                 .padding(.bottom, -150)
             VStack(alignment: .leading) {
