@@ -16,12 +16,18 @@ struct LandmarkList: View {
                     LandmarkRow(landmark: landmark)
                 }
             }
+            LandmarkListPlaceholder()
         .navigationBarTitle("Landmarks")
         }
-        .navigationViewStyle(StackNavigationViewStyle())
-//        TODO: if landscape mode on ipad, switch to DoubleColumnNavigationViewStyle()
     }
 }
+
+struct LandmarkListPlaceholder: View {
+    var body: some View {
+        Text("Rotate your device or swipe from the left.")
+    }
+}
+    
 
 struct LandmarkList_Previews: PreviewProvider {
     static var previews: some View {
@@ -29,7 +35,7 @@ struct LandmarkList_Previews: PreviewProvider {
             LandmarkList()
                 .previewDevice(PreviewDevice(rawValue: deviceName))
                 .previewDisplayName(deviceName)
-                .environment(\.colorScheme, .dark)
+//                .environment(\.colorScheme, .dark)
         }
     }
 }
