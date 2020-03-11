@@ -18,7 +18,8 @@ struct LandmarkList: View {
             }
         .navigationBarTitle("Landmarks")
         }
-        
+        .navigationViewStyle(StackNavigationViewStyle())
+//        TODO: if landscape mode on ipad, switch to DoubleColumnNavigationViewStyle()
     }
 }
 
@@ -29,7 +30,6 @@ struct LandmarkList_Previews: PreviewProvider {
                 .previewDevice(PreviewDevice(rawValue: deviceName))
                 .previewDisplayName(deviceName)
                 .environment(\.colorScheme, .dark)
-            //TODO: figure out why the ipad preview dont work with this list (or ipad simulator 🤔)
         }
     }
 }
