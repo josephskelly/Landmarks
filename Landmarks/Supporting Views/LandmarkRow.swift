@@ -24,6 +24,7 @@ struct LandmarkRow: View {
                     .imageScale(.large)
             } else {
                 Image(systemName: "star")
+                    .foregroundColor(.gray)
                     .imageScale(.large)
             }
         }
