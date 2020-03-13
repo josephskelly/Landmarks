@@ -17,6 +17,7 @@ struct LandmarkList: View {
                 Toggle(isOn: $showFavoritesOnly) {
                     Text("Favorites Only")
                 }.accentColor(.blue) // doesn't work. fixed in xcode 11 beta 4?
+//          https://stackoverflow.com/questions/56479674/set-toggle-color-in-swiftui
                 ForEach(landmarkData) { landmark in
                     if !self.showFavoritesOnly || landmark.isFavorite {
                         NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
