@@ -19,12 +19,29 @@ struct LandmarkDetail: View {
             MapView(coordinate: landmark.locationCoordinate)
                 .frame(height: 300)
                 .edgesIgnoringSafeArea(.top)
+            
             CircleImage(image: landmark.image)
                 .offset(y: -150)
                 .padding(.bottom, -150)
+            
             VStack(alignment: .leading) {
-                Text(landmark.name)
-                    .font(.title)
+                HStack {
+                    Text(landmark.name)
+                        .font(.title)
+                    
+                    Button(action: {self.userData.landmarks[self.landmarkIndex].isFavorite.toggle()})
+                    {
+                        if self.userData.landmarks[landmarkIndex].isFavorite {
+                            Image(systemName: "star.fill")
+                                //                                    .imageScale(.large)
+                                .foregroundColor(.yellow)
+                        } else {
+                            Image(systemName: "star")
+                                .foregroundColor(.gray)
+                            //                                    .imageSclae(.large)
+                        }
+                    }
+                }
                 HStack {
                     Text(landmark.park)
                         .font(.subheadline)
