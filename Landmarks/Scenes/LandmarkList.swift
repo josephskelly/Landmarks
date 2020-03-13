@@ -9,17 +9,17 @@
 import SwiftUI
 
 struct LandmarkList: View {
-    @State var showFavoritesOnly = true
+    @EnvironmentObject var userData: UserData
     
     var body: some View {
         NavigationView {
             List {
-                Toggle(isOn: $showFavoritesOnly) {
+                Toggle(isOn: $userData.showFavoritesOnly) {
                     Text("Favorites Only")
                 }.accentColor(.blue) // doesn't work. fixed in xcode 11 beta 4?
-//          https://stackoverflow.com/questions/56479674/set-toggle-color-in-swiftui
-                ForEach(landmarkData) { landmark in
-                    if !self.showFavoritesOnly || landmark.isFavorite {
+                //          https://stackoverflow.com/questions/56479674/set-toggle-color-in-swiftui
+                ForEach(userData.landmarks) { landmark in
+                    if !self.userData.showFavoritesOnly || landmark.isFavorite {
                         NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
                             LandmarkRow(landmark: landmark)
                         }
@@ -29,7 +29,7 @@ struct LandmarkList: View {
             .navigationBarTitle("Landmarks")
             LandmarkListPlaceholder()
         }
-
+        
     }
 }
 
@@ -46,7 +46,8 @@ struct LandmarkList_Previews: PreviewProvider {
             LandmarkList()
                 .previewDevice(PreviewDevice(rawValue: deviceName))
                 .previewDisplayName(deviceName)
-            //                .environment(\.colorScheme, .dark)
+//                .environment(\.colorScheme, .dark)
+                .environmentObject(UserData())
         }
     }
 }
