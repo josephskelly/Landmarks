@@ -28,17 +28,17 @@ struct LandmarkDetail: View {
                 HStack {
                     Text(landmark.name)
                         .font(.title)
-                    
+                    Spacer()
                     Button(action: {self.userData.landmarks[self.landmarkIndex].isFavorite.toggle()})
                     {
                         if self.userData.landmarks[landmarkIndex].isFavorite {
                             Image(systemName: "star.fill")
-                                //                                    .imageScale(.large)
+                                .imageScale(.large)
                                 .foregroundColor(.yellow)
                         } else {
                             Image(systemName: "star")
                                 .foregroundColor(.gray)
-                            //                                    .imageSclae(.large)
+                                .imageScale(.large)
                         }
                     }
                 }
