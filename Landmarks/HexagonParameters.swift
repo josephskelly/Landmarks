@@ -15,7 +15,7 @@ struct HexagonParameters {
         let useHeight: (CGFloat, CGFloat, CGFloat)
         let yFactors: (CGFloat, CGFloat, CGFloat)
     }
-    static let adjustment: CGFloat = 0.85
+    static let adjustment: CGFloat = 0.085
     static let points = [
         Segment(
             useWidth: (1.00, 1.00, 1.00),

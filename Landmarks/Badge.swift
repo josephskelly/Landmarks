@@ -34,5 +34,3 @@ struct Badge_Previews: PreviewProvider {
             .previewLayout(.fixed(width: 100, height: 100))
     }
 }
-
-//NOTES: hexagon is not a hexagon. demo code executes same shape. susepct HexagonParameters.swift
