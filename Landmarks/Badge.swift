@@ -10,7 +10,6 @@ import SwiftUI
 
 struct Badge: View {
     var body: some View {
-        //        Image(systemName: "triangle.fill")
         GeometryReader { geometry in
             Path { path in
                 var width: CGFloat = min(geometry.size.width, geometry.size.height)
@@ -45,20 +44,16 @@ struct Badge: View {
             }
             .fill(
                 LinearGradient(
-                    gradient: .init(
-                        colors: [
-                            Color(red: 239.0 / 255, green: 120.0 / 255, blue: 221.0 / 255),
-                            Color(red: 239.0 / 255, green: 172.0 / 255, blue: 120.0 / 255)
-                        ]
-                    ),
+                    gradient: .init(colors: [self.gradientStart, self.gradientEnd]),
                     startPoint: .init(x: 0.5, y: 0),
                     endPoint: .init(x: 0.5, y: 0.6)
                 )
             )
         }
     }
+    let gradientStart = Color(red: 239.0 / 255, green: 120.0 / 255, blue: 221.0 / 255)
+    let gradientEnd = Color(red: 239.0 / 255, green: 172.0 / 255, blue: 120.0 / 255)
 }
-
 struct Badge_Previews: PreviewProvider {
     static var previews: some View {
         Badge()
