@@ -18,6 +18,7 @@
 		D81411A62413718000372717 /* LandmarksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81411A52413718000372717 /* LandmarksUITests.swift */; };
 		D81828D524233B7C0045BEA9 /* hikeData.json in Resources */ = {isa = PBXBuildFile; fileRef = D81828D424233B7C0045BEA9 /* hikeData.json */; };
 		D81828D724233BFF0045BEA9 /* Hike.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81828D624233BFF0045BEA9 /* Hike.swift */; };
+		D81828D924233E550045BEA9 /* HikeGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81828D824233E550045BEA9 /* HikeGraph.swift */; };
 		D89B95B02416D6ED00BEBAAF /* chilkoottrail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D89B95A42416D6EC00BEBAAF /* chilkoottrail.jpg */; };
 		D89B95B12416D6ED00BEBAAF /* stmarylake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D89B95A52416D6EC00BEBAAF /* stmarylake.jpg */; };
 		D89B95B22416D6ED00BEBAAF /* yukon_charleyrivers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D89B95A62416D6EC00BEBAAF /* yukon_charleyrivers.jpg */; };
@@ -81,6 +82,7 @@
 		D81411A72413718000372717 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D81828D424233B7C0045BEA9 /* hikeData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = hikeData.json; sourceTree = "<group>"; };
 		D81828D624233BFF0045BEA9 /* Hike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hike.swift; sourceTree = "<group>"; };
+		D81828D824233E550045BEA9 /* HikeGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeGraph.swift; sourceTree = "<group>"; };
 		D89B95A42416D6EC00BEBAAF /* chilkoottrail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chilkoottrail.jpg; sourceTree = "<group>"; };
 		D89B95A52416D6EC00BEBAAF /* stmarylake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stmarylake.jpg; sourceTree = "<group>"; };
 		D89B95A62416D6EC00BEBAAF /* yukon_charleyrivers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yukon_charleyrivers.jpg; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				D8AE4A382416D45D00436ADC /* LandmarkRow.swift */,
 				D8AE4A232413950B00436ADC /* CircleImage.swift */,
 				D8AE4A252413965C00436ADC /* MapView.swift */,
+				D81828D824233E550045BEA9 /* HikeGraph.swift */,
 			);
 			path = "Supporting Views";
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D81828D724233BFF0045BEA9 /* Hike.swift in Sources */,
+				D81828D924233E550045BEA9 /* HikeGraph.swift in Sources */,
 				D8E04045241C42A900AD6313 /* HexagonParameters.swift in Sources */,
 				D8AE4A3424160A4100436ADC /* Data.swift in Sources */,
 				D81411842413717E00372717 /* AppDelegate.swift in Sources */,
