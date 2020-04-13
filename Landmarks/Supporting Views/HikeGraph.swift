@@ -23,6 +23,7 @@ func magnitude(of range: Range<Double>) -> Double {
 struct HikeGraph: View {
     var hike: Hike
     var path: KeyPath<Hike.Observation, Range<Double>>
+    
     var color: Color {
         switch path {
         case \.elevation:
@@ -45,9 +46,12 @@ struct HikeGraph: View {
         return GeometryReader { proxy in
             HStack(alignment: .bottom, spacing: proxy.size.width / 120) {
                 ForEach(data.indices) { index in
-                    GraphCapsule {
-                        //TODO: define graphCapsule
-                    }
+                    GraphCapsule(
+                        index: index,
+                        height: proxy.size.height,
+                        range: data[index][keyPath: self.path],
+                        overallRange: overallRange)
+                    .colorMultiply(self.color)
                 }
             }
         }
